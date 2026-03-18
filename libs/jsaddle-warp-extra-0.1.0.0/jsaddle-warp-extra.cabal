@@ -1,0 +1,30 @@
+
+cabal-version: 1.12
+
+name:           jsaddle-warp-extra
+version:        0.1.0.0
+author:         Jordi Forga Alberich
+build-type:     Simple
+
+library
+  exposed-modules:
+      Language.Javascript.JSaddle.RunWarp
+  hs-source-dirs:
+      src
+  if impl(ghcjs)
+      buildable: False
+  build-depends:
+      base >=4.7 && <5
+      , binary
+      , bytestring
+      , containers
+      , jsaddle >=0.9 && <0.10
+      , jsaddle-warp >=0.9 && <0.10
+      , mtl
+      , websockets
+      , wai
+      , http-types
+      , text
+      , warp
+  default-language: Haskell2010
+

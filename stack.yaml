@@ -1,0 +1,26 @@
+
+# Descomenteu un dels 'resolver's:
+
+resolver: lts-18.28
+# (using ghc-8.10.7)
+
+# resolver: lts-20.26
+# (using ghc-9.2.8)
+
+packages:
+- life
+# - web-handler
+# - forums-app
+
+- libs/drawing-activity-0.2.1.0
+- libs/drawing-core-0.1.2.0
+- libs/jsaddle-warp-extra-0.1.0.0
+- libs/datfw-core-0.2.0.0
+
+extra-deps:
+- jsaddle-0.9.9.3@sha256:b2cd9ef8f97d4a1e28d4ee6eecf3c9681a2150a82ec5205811dc7d0334d20be5,4708
+- miso-1.8.7.0@sha256:7481cffa5318c0e69c76a4c7b0d541670ba1e1aa509e5d297dcafcc96376ac56,3934
+# servant-lucid-0.9.0.6 is necessary for resolver <= lts-18.28
+- servant-lucid-0.9.0.6@sha256:b7de9f07a056037a10cc012136e7cabc2e685403791d2c0cb0a92f16e3ade6ac,1877
+- jsaddle-warp-0.9.9.5@sha256:ab68bd3720fb97078c5ae7545a7ebee05ac01f5c169f05365eb2cd28fcce1a4a,4910
+

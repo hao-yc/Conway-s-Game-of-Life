@@ -1,0 +1,56 @@
+
+cabal-version: 1.12
+
+name:           drawing-core
+version:        0.1.2.0
+--- description:    Please see the README on GitHub at <https://github.com/githubuser/drawing#readme>
+author:         Jordi Forga Alberich
+maintainer:     jordi.forga@upc.edu
+copyright:      2022 Jordi Forga-Alberich
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+    test/AC.png
+
+library
+  exposed-modules:
+      Drawing
+      Drawing.Image
+      Drawing.Vector
+      Drawing.IO
+      Drawing.Render
+      Drawing.Types
+  hs-source-dirs:
+    src
+  ghc-options:
+    -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns
+    -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+    base >=4.7 && <5
+    , aeson
+    , bytestring
+    , base64-bytestring
+    , template-haskell
+    , text
+  default-language: Haskell2010
+
+executable test1
+  main-is:
+    test/test1.hs
+  build-depends:
+    base >=4.7 && <5
+    , drawing-core
+  default-language: Haskell2010
+
+executable test2
+  main-is:
+    test/test2.hs
+  build-depends:
+    base >=4.7 && <5
+    , drawing-core
+    , text
+  default-language: Haskell2010
+
