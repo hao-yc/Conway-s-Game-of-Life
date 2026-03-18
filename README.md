@@ -121,7 +121,7 @@ The board is saved as JSON in `board.json`:
 
 ---
 
-## Author
+## Author Haoyan Chen
 
 Practice 2 — Telematic Applications Design  
 Telecommunications Engineering · Fall 2025
